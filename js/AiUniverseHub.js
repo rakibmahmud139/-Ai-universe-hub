@@ -15,7 +15,7 @@ const displayData = tools => {
 
   // display All data
 
-  Object.values(tools).forEach( tool => {
+  Object.values(tools).forEach(tool => {
     const toolDiv = document.createElement('div')
     toolDiv.classList.add('col')
     toolDiv.innerHTML = `
@@ -28,14 +28,100 @@ const displayData = tools => {
             <p class="card-text">1. ${tool[0].features[1]}</p>
             <p class="card-text">1. ${tool[0].features[2]}</p>
           </div>
-          <h4 class="mt-4 ps-4">ChatGPT</h4>
-          <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[0].published_in}</i></p>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[0].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[1].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[1].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[1].features}</p>
+            <p class="card-text">1. ${tool[1].features[1]}</p>
+            <p class="card-text">1. ${tool[1].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[1].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[1].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
         </div>
       </div>
         `;
     dataContainer.appendChild(toolDiv);
   });
 }
+
+
+
+// modal
+
+const loadToolDetails = (id) => {
+  const url = `https://openapi.programming-hero.com/api/ai/tool/${id}`;
+  fetch(url)
+    .then(res => res.json())
+    .then(data => displayToolDetails(data.data))
+}
+
+const displayToolDetails = tool => {
+  const toolDetail = document.getElementById('tool-detail');
+  toolDetail.innerHTML = `
+  <div class="container d-flex justify-content-around gap-3 rounded-4">
+  <div class="border border-danger-subtle bg-danger-subtle rounded-4 p-3">
+  <h5 class="mb-4"> ${tool.description}</h5>
+  <div class="d-flex justify-content-around mb-4 gap-4">
+  <div>
+  <h6 class="border bg-light-subtle text-success rounded-4 p-4">$10/ <br> month <br> Basic</h6>
+  </div>
+  <div>
+  <h6 class="border bg-light-subtle text-warning-emphasis rounded-4 p-4 gap-4">$10/ <br> month <br> Basic</h6>
+  </div>
+  <div>
+  <h6 class="border bg-light-subtle text-danger-emphasis rounded-4 p-4 gap-4 ml-3">Contact <br> us <br> Enterprise</h6>
+  </div>
+  </div>
+  <div class="d-flex justify-content-around gap-2">
+  <div>
+ <h5>Features</h5>
+  <ul>
+  <li>${tool.features.feature_name}</li>
+  <li>${tool.features.feature_name}</li>
+  <li>${tool.features.feature_name}</li>
+  </ul>
+  </div>
+  <div>
+  <h5>Integrations</h5>
+  <ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="border border-danger-subtle rounded-4">
+  <img class="p-4" src=" ${tool.image_link}" class="card-img-top" alt="...">
+  <h5 class="p-4">Hi, how are you doing today?</h5>
+  <p class="p-4">I'm doing well, thank you for asking. How can I assist you today?</p>
+  </div>
+  </div>
+
+`
+}
+
+
 
 
 

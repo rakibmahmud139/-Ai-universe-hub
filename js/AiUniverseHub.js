@@ -30,7 +30,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[0].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[0].published_in}</i></p>
        </div>
        <div>
@@ -40,7 +40,7 @@ const displayData = tools => {
         </div>
       </div>
 
-      // card-2
+    
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -53,7 +53,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[1].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[1].published_in}</i></p>
        </div>
        <div>
@@ -63,7 +63,7 @@ const displayData = tools => {
         </div>
       </div>
 
-      // card-3
+      
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -76,7 +76,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[2].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[2].published_in}</i></p>
        </div>
        <div>
@@ -86,7 +86,7 @@ const displayData = tools => {
         </div>
       </div>
 
-      // card-4
+    
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -99,7 +99,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[3].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[3].published_in}</i></p>
        </div>
        <div>
@@ -109,7 +109,7 @@ const displayData = tools => {
         </div>
       </div>
 
-    // card-5
+    
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -122,7 +122,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[4].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[4].published_in}</i></p>
        </div>
        <div>
@@ -132,7 +132,7 @@ const displayData = tools => {
         </div>
       </div>
 
-    // card-6
+    
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -145,7 +145,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[5].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[5].published_in}</i></p>
        </div>
        <div>
@@ -155,7 +155,7 @@ const displayData = tools => {
         </div>
       </div>
 
-    // card-7
+    
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -168,7 +168,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[6].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[6].published_in}</i></p>
        </div>
        <div>
@@ -178,7 +178,7 @@ const displayData = tools => {
         </div>
       </div>
 
-    // card-8
+    
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -191,7 +191,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[7].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[7].published_in}</i></p>
        </div>
        <div>
@@ -201,7 +201,7 @@ const displayData = tools => {
         </div>
       </div>
 
-    // card-9
+  
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -214,7 +214,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[8].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[8].published_in}</i></p>
        </div>
        <div>
@@ -224,7 +224,7 @@ const displayData = tools => {
         </div>
       </div>
 
-    // card-10
+    
 
         <div class="col p-4">
         <div class="card h-100 ">
@@ -237,7 +237,7 @@ const displayData = tools => {
           </div>
        <div  class="d-flex justify-content-between">
        <div>
-       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <h4 class="mt-4 ps-4">${tool[9].name}</h4>
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[9].published_in}</i></p>
        </div>
        <div>

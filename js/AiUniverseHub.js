@@ -34,11 +34,14 @@ const displayData = tools => {
        <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[0].published_in}</i></p>
        </div>
        <div>
-       <button onclick="displayToolDetails('${tool[1].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       <button onclick="displayToolDetails('${tool[0].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
        </div>
        </div>
         </div>
       </div>
+
+      // card-2
+
         <div class="col p-4">
         <div class="card h-100 ">
           <img class="p-4 rounded-4" src="${tool[1].image}" class="card-img-top" alt="...">
@@ -55,6 +58,190 @@ const displayData = tools => {
        </div>
        <div>
        <button onclick="displayToolDetails('${tool[1].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+      // card-3
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[2].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[2].features}</p>
+            <p class="card-text">1. ${tool[2].features[1]}</p>
+            <p class="card-text">1. ${tool[2].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[2].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[2].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+      // card-4
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[3].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[3].features}</p>
+            <p class="card-text">1. ${tool[3].features[1]}</p>
+            <p class="card-text">1. ${tool[3].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[3].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[3].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+    // card-5
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[4].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[4].features}</p>
+            <p class="card-text">1. ${tool[4].features[1]}</p>
+            <p class="card-text">1. ${tool[4].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[4].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[4].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+    // card-6
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[5].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[5].features}</p>
+            <p class="card-text">1. ${tool[5].features[1]}</p>
+            <p class="card-text">1. ${tool[5].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[5].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[5].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+    // card-7
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[6].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[6].features}</p>
+            <p class="card-text">1. ${tool[6].features[1]}</p>
+            <p class="card-text">1. ${tool[6].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[6].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[6].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+    // card-8
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[7].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[7].features}</p>
+            <p class="card-text">1. ${tool[7].features[1]}</p>
+            <p class="card-text">1. ${tool[7].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[7].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[7].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+    // card-9
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[8].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[8].features}</p>
+            <p class="card-text">1. ${tool[8].features[1]}</p>
+            <p class="card-text">1. ${tool[8].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[8].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[8].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
+       </div>
+       </div>
+        </div>
+      </div>
+
+    // card-10
+
+        <div class="col p-4">
+        <div class="card h-100 ">
+          <img class="p-4 rounded-4" src="${tool[9].image}" class="card-img-top" alt="...">
+          <div class="card-body p-4 border-bottom">
+            <h4 class="card-title">Features</h4>
+            <p class="card-text">1. ${tool[9].features}</p>
+            <p class="card-text">1. ${tool[9].features[1]}</p>
+            <p class="card-text">1. ${tool[9].features[2]}</p>
+          </div>
+       <div  class="d-flex justify-content-between">
+       <div>
+       <h4 class="mt-4 ps-4">ChatGPT</h4>
+       <p class="ps-4"><i class="fa-regular fa-calendar"> ${tool[9].published_in}</i></p>
+       </div>
+       <div>
+       <button onclick="displayToolDetails('${tool[9].id}')" type="button" class="btn pt-5 text-danger-emphasis" data-bs-toggle="modal" data-bs-target="#toolModal"><i class="fa-solid fa-arrow-right bg-danger-subtle"></i></button>
        </div>
        </div>
         </div>
